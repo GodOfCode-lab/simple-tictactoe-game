@@ -202,7 +202,7 @@ Displays the Top 5 players sorted by score using JTable.
 
 ### Main Menu
 
-![Main Menu](screenshots/main-menu.png)
+![Main Menu](screenshots/menu.png)
 
 ---
 
