@@ -247,9 +247,7 @@ https://github.com/GodOfCode-lab/simple-tictactoe-game
 
 YouTube:
 
-```
-Coming soon
-```
+https://youtu.be/B86xPl9mOOE
 
 ---
 
