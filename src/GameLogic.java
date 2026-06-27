@@ -17,6 +17,7 @@ public class GameLogic {
         }
     }
 
+    // Make Move Method
     public boolean makeMove(int index, char symbol) {
         if (index < 0 || index >= 9) return false;
         if (board[index] != ' ') return false;
@@ -24,6 +25,7 @@ public class GameLogic {
         return true;
     }
 
+    // Check Winner Method
     public boolean checkWinner(char symbol) {
         int[][] patterns = {
                 {0, 1, 2}, {3, 4, 5}, {6, 7, 8}, // baris
@@ -41,6 +43,7 @@ public class GameLogic {
         return false;
     }
 
+    // Draw Method
     public boolean isDraw() {
         for (int i = 0; i < board.length; i++) {
             if (board[i] == ' ') return false;
@@ -48,6 +51,7 @@ public class GameLogic {
         return true;
     }
 
+    // Computer Move Method
     public int computerMove() {
         // Kumpulkan semua index yang masih kosong
         ArrayList<Integer> empty = new ArrayList<>();

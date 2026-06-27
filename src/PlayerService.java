@@ -5,6 +5,7 @@ import java.util.ArrayList;
 
 public class PlayerService {
 
+    // Login Method
     public Player login(String username, String password) {
         String sql = "SELECT * FROM players WHERE username = ? AND password = ?";
         try {
@@ -28,6 +29,7 @@ public class PlayerService {
         return null;
     }
 
+    // Update Statistics Method
     public void updateStatistics(Player player, String result) {
         int additionalScore = 0;
         String sql = "";
@@ -54,6 +56,7 @@ public class PlayerService {
         }
     }
 
+    // Get Player by ID Method
     public Player getPlayerById(int id) {
         String sql = "SELECT * FROM players WHERE id = ?";
         try {
@@ -77,6 +80,7 @@ public class PlayerService {
         return null;
     }
 
+    // Top Five Scorers Method
     public ArrayList<Player> getTopFiveScorers() {
         ArrayList<Player> list = new ArrayList<>();
         String sql = "SELECT * FROM players ORDER BY score DESC, wins DESC LIMIT 5";

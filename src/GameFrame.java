@@ -52,6 +52,7 @@ public class GameFrame extends JFrame {
         add(btnBack, BorderLayout.SOUTH);
     }
 
+    // Player Move Method
     private void handlePlayerMove(int index) {
         if (gameOver) return;
 
@@ -101,6 +102,7 @@ public class GameFrame extends JFrame {
         lblStatus.setText("Giliran kamu (X)");
     }
 
+    // Finish Game Method
     private void finishGame(String result) {
         gameOver = true;
 
